@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BHT Juice | Fresh Flavors, Naturally Refreshing</title>
+<meta name="description" content="BHT Juice makes refreshing, fruit-packed juices in mango, orange, pineapple, watermelon and more. Explore the menu and prepare your order.">
+<meta name="theme-color" content="#174D35">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BHT Juice | Fresh Flavors, Naturally Refreshing">
+<meta property="og:description" content="Nature's goodness, bottled fresh. Explore our juices and order today.">
+<meta property="og:image" content="assets/images/hero-juices.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23174D35'/%3E%3Cpath d='M32 10c10 12 15 20 15 28a15 15 0 0 1-30 0c0-8 5-16 15-28z' fill='%23FF9F43'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+
+<script src="./script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#juices">Skip to menu</a>
+
+<header class="site-header" id="header">
+  <div class="container bar">
+    <a class="logo" href="#home" aria-label="BHT Juice home">
+      <svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><path d="M24 4c9 11 14 18 14 25a14 14 0 0 1-28 0C10 22 15 15 24 4z" fill="#FF9F43"/><path d="M24 44c0-9 4-15 12-18-1 9-5 16-12 18z" fill="#4F9D69"/><path d="M17 27a7 7 0 0 0 5 8" stroke="#FFF9EF" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+      <span>BHT <em>Juice</em></span>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#home">Home</a><a href="#juices">Our Juices</a><a href="#about">About Us</a><a href="#why">Why Choose Us</a><a href="#contact">Contact</a>
+      <button class="btn btn-accent" data-open-cart>Order Now <span class="count" data-cart-count>0</span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Freshness in every sip</p>
+      <h1>Nature's Goodness. <span>Bottled Fresh.</span></h1>
+      <p class="lead">Discover refreshing, fruit-packed juices made to brighten your day, one delicious sip at a time.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#juices">Explore Our Juices</a>
+        <button class="btn btn-ghost" data-open-cart>Order Now</button>
+      </div>
+      <p class="hero-note"><svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14zM5 19l8-8"/></svg> Real fruit flavors, prepared for your everyday moments.</p>
+    </div>
+    <div class="hero-media">
+      <svg class="citrus" viewBox="0 0 130 130" aria-hidden="true"><circle cx="65" cy="65" r="62" fill="#FFD166"/><circle cx="65" cy="65" r="52" fill="#FF9F43"/><circle cx="65" cy="65" r="26" fill="none" stroke="#FFF9EF" stroke-width="52" stroke-dasharray="3 17.4"/><circle cx="65" cy="65" r="6" fill="#FFF9EF"/></svg>
+      <div class="carousel" id="carousel" role="region" aria-roledescription="carousel" aria-label="Featured BHT Juice flavors" tabindex="0"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="juices">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">The menu</p>
+      <h2>Fresh Flavors. Real Goodness.</h2>
+      <p>From tropical favorites to refreshing citrus blends, find your perfect sip.</p>
+    </header>
+    <div class="filters reveal" role="group" aria-label="Filter juices">
+      <button class="chip" data-filter="all" aria-pressed="true">All Juices</button>
+      <button class="chip" data-filter="citrus" aria-pressed="false">Citrus</button>
+      <button class="chip" data-filter="tropical" aria-pressed="false">Tropical</button>
+      <button class="chip" data-filter="blend" aria-pressed="false">Fruit Blends</button>
+    </div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+    <p class="fine" id="priceNote"></p>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container split">
+    <div class="about-media reveal">
+      <img src="assets/images/fresh-fruit.jpg" width="800" height="1000" loading="lazy" alt="A colorful arrangement of fresh citrus, mango and pineapple" data-c1="#4F9D69" data-c2="#FFD166">
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Our story</p>
+      <h2>Good Fruit. Great Taste. Better Moments.</h2>
+      <p>BHT Juice began with a simple idea: a glass of juice should taste like the fruit it came from. We focus on bright, enjoyable flavors and a friendly experience, whether you're grabbing a drink for yourself or sharing a few bottles with friends.</p>
+      <ul class="principles">
+        <li><h3>Freshness First</h3><p>We keep our menu simple so every flavor can shine.</p></li>
+        <li><h3>Flavor You Love</h3><p>Tropical, citrus and blends, so there's a taste for everyone.</p></li>
+        <li><h3>Made for Your Moments</h3><p>Morning routines, lunch breaks, gatherings and gifts.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section why" id="why">
+  <div class="container">
+    <header class="section-head reveal"><p class="eyebrow">Why BHT Juice</p><h2>A better reason to reach for juice</h2></header>
+    <div class="why-grid">
+      <article class="reveal"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg><h3>Refreshing flavors</h3><p>Bright, fruit-forward drinks for every mood.</p></article>
+      <article class="reveal"><svg class="ico" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14zM5 19l8-8"/></svg><h3>Carefully selected ingredients</h3><p>We choose fruit for taste and ripeness.</p></article>
+      <article class="reveal"><svg class="ico" viewBox="0 0 24 24"><path d="M4 8l8-4 8 4v8l-8 4-8-4zM4 8l8 4 8-4M12 12v8"/></svg><h3>Convenient packaging</h3><p>Easy to carry, share and enjoy on the go.</p></article>
+      <article class="reveal"><svg class="ico" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10M14 5v4M6 15v4"/></svg><h3>Options for every taste</h3><p>Sweet, tangy, tropical or green: you choose.</p></article>
+      <article class="reveal"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg><h3>Friendly ordering</h3><p>Build your order and send it in a few taps.</p></article>
+      <article class="reveal"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg><h3>Everyday and special days</h3><p>Great for daily sips and for celebrations.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="promo" id="promo">
+  <div class="container promo-grid">
+    <div class="reveal">
+      <p class="eyebrow">Featured campaign</p>
+      <h2>A Little More Freshness in Every Day.</h2>
+      <p>Find your favorite flavor and make every sip a refreshing moment.</p>
+      <a class="btn btn-accent" href="#juices">Choose Your Flavor</a>
+    </div>
+    <img class="reveal" src="assets/images/promo-juice-pour.jpg" width="900" height="600" loading="lazy" alt="Fresh orange juice being poured into a glass" data-c1="#FF9F43" data-c2="#FFD166">
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="container">
+    <header class="section-head reveal"><p class="eyebrow">Kind words</p><h2>Fresh Love, One Sip at a Time.</h2></header>
+    <div class="quotes">
+      <figure class="reveal"><blockquote>"Placeholder: describe your favorite BHT Juice flavor and the moment you enjoyed it."</blockquote><figcaption>Customer name <small>Placeholder, replace with real feedback</small></figcaption></figure>
+      <figure class="reveal"><blockquote>"Placeholder: share what you liked about the ordering experience."</blockquote><figcaption>Customer name <small>Placeholder, replace with real feedback</small></figcaption></figure>
+      <figure class="reveal"><blockquote>"Placeholder: tell others why you'd recommend BHT Juice."</blockquote><figcaption>Customer name <small>Placeholder, replace with real feedback</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container split">
+    <div class="reveal">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Let's talk juice.</h2>
+      <p>Questions, bulk orders or a flavor request? Send us a note, or prepare your order and send it straight to us.</p>
+      <dl class="details">
+        <div><dt>Phone</dt><dd><a data-contact="phone">Add your phone number</a></dd></div>
+        <div><dt>WhatsApp</dt><dd><a data-contact="whatsappNumber">Add your WhatsApp number</a></dd></div>
+        <div><dt>Email</dt><dd><a data-contact="email">Add your email address</a></dd></div>
+        <div><dt>Location</dt><dd><span data-contact="location">Add your location or service area</span></dd></div>
+        <div><dt>Hours</dt><dd><span data-contact="hours">Add your business hours</span></dd></div>
+      </dl>
+      <button class="btn btn-primary" data-open-cart>Start an Order</button>
+    </div>
+    <form class="form reveal" id="form" novalidate>
+      <label for="f-name">Your name</label>
+      <input id="f-name" name="name" autocomplete="name" aria-describedby="e-name" required>
+      <p class="err" id="e-name" role="alert"></p>
+      <label for="f-contact">Email or phone</label>
+      <input id="f-contact" name="contact" autocomplete="email" aria-describedby="e-contact" required>
+      <p class="err" id="e-contact" role="alert"></p>
+      <label for="f-msg">Message</label>
+      <textarea id="f-msg" name="message" rows="4" aria-describedby="e-msg" required></textarea>
+      <p class="err" id="e-msg" role="alert"></p>
+      <button class="btn btn-primary" type="submit">Send Message</button>
+      <p class="status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container foot-grid">
+    <div>
+      <a class="logo light" href="#home" aria-label="BHT Juice home"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><path d="M24 4c9 11 14 18 14 25a14 14 0 0 1-28 0C10 22 15 15 24 4z" fill="#FF9F43"/><path d="M24 44c0-9 4-15 12-18-1 9-5 16-12 18z" fill="#4F9D69"/></svg><span>BHT <em>Juice</em></span></a>
+      <p>Refreshing fruit juices for everyday moments.</p>
+      <button class="btn btn-accent" data-open-cart>Order Now</button>
+    </div>
+    <nav aria-label="Footer"><h3>Explore</h3><a href="#home">Home</a><a href="#juices">Our Juices</a><a href="#about">About Us</a><a href="#why">Why Choose Us</a><a href="#contact">Contact</a></nav>
+    <div><h3>Contact</h3><p><a data-contact="phone">Add your phone number</a></p><p><a data-contact="email">Add your email address</a></p><div class="social" id="social"></div></div>
+  </div>
+  <div class="container foot-base"><p>&copy; <span id="year"></span> BHT Juice. All rights reserved.</p><button class="to-top" id="toTop" aria-label="Back to top">&uarr; Top</button></div>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" hidden>
+  <div class="drawer-head"><h2 id="drawerTitle">Your order</h2><button class="icon-btn" id="closeCart" aria-label="Close order summary">&times;</button></div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot">
+    <p class="subtotal"><span>Subtotal</span><strong id="subtotal">0</strong></p>
+    <p class="fine" id="cartNote"></p>
+    <a class="btn btn-primary wide" id="waBtn" target="_blank" rel="noopener">Prepare WhatsApp Message</a>
+    <button class="btn btn-ghost wide" id="clearCart">Clear order</button>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
